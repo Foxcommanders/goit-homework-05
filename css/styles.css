@@ -11,6 +11,12 @@
   --secondary-logo-icon-color: #404bbf;
   --secondary-social-icon-color: #31d0aa;
   --transition-dur-tfunc: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-tfunc2: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-tfunc3: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -154,7 +160,7 @@ nav .link {
   content: '';
   width: 100%;
   height: 4px;
-
+  bottom: -1px;
   background-color: var(--alt-secondary-color-btn);
   border-radius: 2px;
 }
@@ -394,8 +400,8 @@ nav .link {
   justify-content: center;
   color: var(--main-logo-icon-color);
 
-  transition: border var(--transition-dur-tfunc),
-    color var(--transition-dur-tfunc);
+  transition: border var(--transition-dur-tfunc2),
+    color var(--transition-dur-tfunc2);
 }
 
 .customers-icon {
@@ -598,9 +604,9 @@ nav .link {
   letter-spacing: 0.04em;
   border: 1px solid var(--secondary-color-btn);
   border-radius: 4px;
-  transition: color var(--transition-dur-tfunc),
-    background-color var(--transition-dur-tfunc),
-    box-shadow var(--transition-dur-tfunc), border var(--transition-dur-tfunc);
+  transition: color var(--transition-dur-tfunc3),
+    background-color var(--transition-dur-tfunc3),
+    box-shadow var(--transition-dur-tfunc3), border var(--transition-dur-tfunc3);
 }
 
 .filter:hover,
@@ -610,6 +616,7 @@ nav .link {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: translateY(0%);
 }
 
 .list.projects {
@@ -659,7 +666,8 @@ nav .link {
 .type {
   text-decoration: none;
   color: var(--main-color-text);
-
+  /* Delite */
+  padding: 40px 32px;
   letter-spacing: 0.02em;
 }
 
