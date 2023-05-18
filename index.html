@@ -15,14 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <style>
-      .overlay {
-        opacity: 0;
-      }
-    </style>
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Nav -->
+
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -31,13 +29,13 @@
           >
           <ul class="list">
             <li>
-              <a class="menu link current-page" href="./index.html">Studio</a>
+              <a class="menu link" href="./index.html">Studio</a>
             </li>
             <li>
               <a class="menu link" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="menu link" href="#">Contacts</a>
+              <a class="menu link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -57,15 +55,16 @@
     </header>
     <main>
       <!-- Hero -->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button data-modal-open class="btn" type="button">
-            Order Service
-          </button>
+          <button class="btn" type="button">Order Service</button>
         </div>
       </section>
+
       <!-- Activity -->
+
       <section class="section activity">
         <div class="container">
           <h2 class="section-title hidden">Activity</h2>
@@ -121,7 +120,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Products -->
+
       <section class="section products">
         <div class="container">
           <h2 class="section-title">What Are We Doing</h2>
@@ -138,7 +139,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Team -->
+
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -362,7 +365,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Customers -->
+
       <section class="section customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -413,7 +418,9 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="container-logo">
@@ -476,15 +483,5 @@
         </div>
       </div>
     </footer>
-    <div data-modal class="overlay is-hidden">
-      <div class="modal">
-        <button data-modal-close class="modal-close-btn" type="button">
-          <svg class="close-btn">
-            <use href="./images/icons.svg#icon-close-modal"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
