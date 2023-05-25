@@ -640,8 +640,6 @@ body {
 .type {
   text-decoration: none;
   color: var(--main-color-text);
-  /* Delite */
-  padding: 40px 32px;
   letter-spacing: 0.02em;
 }
 
